@@ -14,7 +14,8 @@ var nc *nats.Conn
 func main() {
 	app := cli.NewApp()
 
-	app.Name = "Nats.io CLI"
+	app.Name = "NatsCLI"
+	app.Usage = "Commandline interface for nats."
 
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
